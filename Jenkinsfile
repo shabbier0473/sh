@@ -11,10 +11,7 @@ pipeline{
                 expression {BRANCH == 'origin/devlop' || BRANCH == 'devlop'  }
             }
             steps{
-                sh 'mvn validate'
-                sh 'mvn compile'
-                sh 'mvn test'
-                
+                echo "devlop"
             }
         }
 
@@ -24,8 +21,8 @@ pipeline{
                 expression { BRANCH == 'origin/release'  || BRANCH == 'release' }
             }
             steps{
-                   sh 'mvn install' 
-                   echo '=====TAG======='
+                  
+                   echo '=====release======='
             }
         }
         
