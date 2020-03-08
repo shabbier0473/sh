@@ -12,6 +12,7 @@ pipeline{
             }
             steps{
                 build job: 'build'
+                build job: 'test'
             }
         }
 
