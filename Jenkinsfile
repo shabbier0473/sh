@@ -14,7 +14,6 @@ pipeline{
                 sh 'mvn compile'
                 sh 'mvn install'
                 build job: 'build'
-                build job: 'test'
                 sh 'mvn deploy'
             }
         }
