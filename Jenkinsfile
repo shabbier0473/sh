@@ -11,6 +11,8 @@ pipeline{
                 expression {BRANCH == 'origin/devlop' || BRANCH == 'devlop'  }
             }
             steps{
+                sh 'mvn compile'
+                sh 'mvn install'
                 build job: 'build'
                 build job: 'test'
             }
