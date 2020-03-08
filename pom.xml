@@ -72,4 +72,17 @@
       </plugins>
     </pluginManagement>
   </build>
+<distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <name>release</name>
+        <url>http://34.205.191.70:9001/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>snapshot</name>
+        <url>http://34.205.191.70:9001/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
+
 </project>
