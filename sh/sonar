@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage ('compile'){
+        stage ('sonar'){
             steps{
-                echo "kjl"
+                sh  'mvn sonar:sonar'
             }
         }
     }
