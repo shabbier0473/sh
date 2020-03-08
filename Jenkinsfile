@@ -11,7 +11,7 @@ pipeline{
                 expression {BRANCH == 'origin/devlop' || BRANCH == 'devlop'  }
             }
             steps{
-                echo "devlop"
+                build job: 'build'
             }
         }
 
